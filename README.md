@@ -16,7 +16,7 @@ ce projet est de la part de Oukaci Sarah M1 SSI
 
 1. **Configurer Kali Linux (Attaquant)** :
    - Mettre à jour le système en utilisant :
-     _sudo apt update && sudo apt upgrade -y_
+     **_sudo apt update && sudo apt upgrade -y_**
    - Installer Wireshark et Ettercap :
      _sudo apt install wireshark ettercap-graphical_
 
