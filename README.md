@@ -18,12 +18,13 @@ ce projet est de la part de Oukaci Sarah M1 SSI
    - Mettre à jour le système en utilisant :
      **_sudo apt update && sudo apt upgrade -y_**
    - Installer Wireshark et Ettercap :
-     _sudo apt install wireshark ettercap-graphical_
+     **_sudo apt install wireshark ettercap-graphical_**
 
 2. **Configurer Ubuntu (Cible)** :
    - Installer un serveur web (Apache) :
-     _sudo apt update_
-     _sudo apt install apache2_
+     
+     **_sudo apt update_**
+     **_sudo apt install apache2_**
    - Vérifier que le serveur web fonctionne en accédant à l'adresse IP de la VM cible dans un navigateur.
 
 #### 3. Réaliser l'Attaque de Sniffing
