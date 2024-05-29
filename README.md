@@ -16,20 +16,14 @@ ce projet est de la part de Oukaci Sarah M1 SSI
 
 1. **Configurer Kali Linux (Attaquant)** :
    - Mettre à jour le système en utilisant : 
-     ```bash
-     sudo apt update && sudo apt upgrade -y
-     ```
+     _sudo apt update && sudo apt upgrade -y_
    - Installer Wireshark et Ettercap :
-     ```bash
-     sudo apt install wireshark ettercap-graphical
-     ```
+     _sudo apt install wireshark ettercap-graphical_
 
 2. **Configurer Ubuntu (Cible)** :
    - Installer un serveur web (Apache) :
-     ```bash
-     sudo apt update
-     sudo apt install apache2
-     ```
+     _sudo apt update_
+     _sudo apt install apache2_
    - Vérifier que le serveur web fonctionne en accédant à l'adresse IP de la VM cible dans un navigateur.
 
 #### 3. Réaliser l'Attaque de Sniffing
@@ -42,9 +36,7 @@ ce projet est de la part de Oukaci Sarah M1 SSI
 
 2. **Utiliser Ettercap sur Kali Linux** :
    - Démarrer Ettercap en mode graphique en utilisant:
-     ```bash
-     sudo ettercap -G
-     ```
+     _sudo ettercap -G_
    - Sélectionner l'interface réseau(la méme que la précédente).
    - Démarrer le sniffing unifié.
    - Scanner les hôtes pour identifier la VM cible.
@@ -54,22 +46,16 @@ ce projet est de la part de Oukaci Sarah M1 SSI
 
 1. **Détection des Tentatives de Sniffing** :
    - Installer `arpwatch` sur la VM cible :
-     ```bash
-     sudo apt install arpwatch
-     ```
+     _sudo apt install arpwatch_
    - Lancer `arpwatch` pour surveiller les activités ARP :
-     ```bash
-     sudo arpwatch -i eth0
-     ```
+     _sudo arpwatch -i eth0_
    - Analyser les logs pour détecter des activités suspectes.
 
 2. **Implémentation de Mesures de Sécurité Réseau** :
    - **Chiffrement** :
      - Configurer HTTPS sur le serveur web :
-       ```bash
-       sudo apt install certbot python3-certbot-apache
-       sudo certbot --apache
-       ```
+       _sudo apt install certbot python3-certbot-apache_
+       _sudo certbot --apache_
    - **Sécurisation ARP** (en utilisant des techniques anti-ARP spoofing).
    - **Segmentation du Réseau** (en divisant le réseau en segments pour limiter l'exposition des données sensibles).
 
