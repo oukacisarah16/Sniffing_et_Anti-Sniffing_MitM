@@ -74,5 +74,5 @@ ce projet est de la part de Oukaci Sarah M1 SSI
    - **Segmentation du Réseau** (en divisant le réseau en segments pour limiter l'exposition des données sensibles).
 
 
----
+
 
